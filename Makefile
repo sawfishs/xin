@@ -1,9 +1,8 @@
-.PHONY : open clean
+.PHONY : clean pdf
 .IGNORE : pdf
-open : pdf
+open : xin.pdf
 	open ./xin.pdf
-
-pdf : xin.tex
+pdf xin.pdf : xin.tex
 	xelatex xin.tex;
 
 clean :

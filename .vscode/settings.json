@@ -1,0 +1,75 @@
+{
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+
+    "latex-workshop.view.pdf.viewer": "external",
+    "window.zoomLevel": 0,
+
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "/usr/local/bin/displayline",
+        "args": [
+            "-r",
+            "%LINE%",
+            "%PDF%",
+            "%TEX%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.command": {
+        "command": "/usr/local/bin/displayline",
+        "args": [
+            "0",
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        }
+
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+    ],
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.chktex.args.active": [
+        "-wall",
+        "-q",
+        "-n19",
+        "-n22",
+        "-n41"
+    ],
+
+}
+
